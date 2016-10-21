@@ -8,6 +8,10 @@
     jbLoaderRelativePath = true
     </script>
   <script type="text/javascript" src="src/loader/load-jbart.js"></script>
+  <script type="text/javascript" src="projects/material-demo/material-demo.js"></script>
+  <script type="text/javascript" src="projects/material-demo/all-readmes.js"></script>
+  <script type="text/javascript" src="projects/material-demo/all-demos.js"></script>
+  <script type="text/javascript" src="projects/material-demo/material-demo-pick.js"></script>
 
     <link rel="stylesheet" href="projects/studio/css/studio.css">
 
@@ -33,10 +37,7 @@ jb_system_config.map = {
 
 jbLoadModules(jb_modules.concat(jb_studio_modules).concat([
   'projects/material-demo/ng-material-demo-loader',
-  '/projects/material-demo/material-demo.js',
-  '/projects/material-demo/all-readmes.js',
-  '/projects/material-demo/all-demos.js',
-  '/projects/material-demo/material-demo-pick.js']))
+  ]))
   .then(loadedModules=>
     jbBootstrap(loadedModules)
   );
