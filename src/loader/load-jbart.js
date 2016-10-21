@@ -139,6 +139,9 @@ jb_system_config = {
         '@angular':  '/node_modules/@angular'
       },
       packages: {  
+        'dist' : {
+          defaultExtension: 'js',
+        },     
         '/dist' : {
           defaultExtension: 'js',
         },     
