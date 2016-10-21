@@ -8,6 +8,19 @@
     jbLoaderRelativePath = true
     </script>
   <script type="text/javascript" src="src/loader/load-jbart.js"></script>
+<script>
+jb_system_config.map = {
+    'jb-core': 'dist/src/core',
+    'ui': 'src/ui',
+    'ui-ts': 'dist/src/ui',
+    'jb-ui': 'dist/src/ui',
+    'testing': 'dist/src/testing',
+    projects: 'dist/projects',
+    studio: 'dist/projects/studio',
+    '@angular2-material': 'node_modules/@angular2-material',
+    '@angular':  'node_modules/@angular'
+}
+</script>
   <script type="text/javascript" src="projects/material-demo/material-demo.js"></script>
   <script type="text/javascript" src="projects/material-demo/all-readmes.js"></script>
   <script type="text/javascript" src="projects/material-demo/all-demos.js"></script>
@@ -22,18 +35,6 @@
   <jbart compID="material-demo.main">loading ...</jbart>
 
 <script>
-
-jb_system_config.map = {
-    'jb-core': 'dist/src/core',
-    'ui': 'src/ui',
-    'ui-ts': 'dist/src/ui',
-    'jb-ui': 'dist/src/ui',
-    'testing': 'dist/src/testing',
-    projects: 'dist/projects',
-    studio: 'dist/projects/studio',
-    '@angular2-material': 'node_modules/@angular2-material',
-    '@angular':  'node_modules/@angular'
-}
 
 jbLoadModules(jb_modules.concat(jb_studio_modules).concat([
   'projects/material-demo/ng-material-demo-loader',
