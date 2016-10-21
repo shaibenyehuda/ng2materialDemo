@@ -48,16 +48,14 @@ if (typeof window != 'undefined' && !window.jbPackaged) {
     window.jbart_widgets = {};
     js_files_to_load.forEach(file =>
       {
-        document.write('<script>jbart.currentFileName = "' + file +
-         '";</script>');
-        document.write('<script src="' + (window.loadFromFS ? '' : '/') + file + 
-          '"></script>');
+        document.write('<script>jbart.currentFileName = "' + file + '";<' + '/script>');
+        document.write('<script src="' + (window.jbLoaderRelativePath ? '' : '/') + file + '"></script>');
       }
     );
   }
 
   css_files_to_load.forEach( file =>
-        document.write('<link rel="stylesheet" type="text/css" href="' + (window.loadFromFS ? '' : '/') + file + '" />')); 
+        document.write('<link rel="stylesheet" type="text/css" href="' + (window.jbLoaderRelativePath ? '' : '/') + file + '" />')); 
 }
 
 function jb_loadEditableFile(file) {
