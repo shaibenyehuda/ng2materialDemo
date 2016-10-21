@@ -19,6 +19,18 @@
 
 <script>
 
+jb_system_config.map = {
+    'jb-core': 'dist/src/core',
+    'ui': 'src/ui',
+    'ui-ts': 'dist/src/ui',
+    'jb-ui': 'dist/src/ui',
+    'testing': 'dist/src/testing',
+    projects: 'dist/projects',
+    studio: 'dist/projects/studio',
+    '@angular2-material': 'node_modules/@angular2-material',
+    '@angular':  'node_modules/@angular'
+}
+
 jbLoadModules(jb_modules.concat(jb_studio_modules).concat([
   'projects/material-demo/ng-material-demo-loader',
   '/projects/material-demo/material-demo.js',
